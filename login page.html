@@ -1,0 +1,87 @@
+<html>
+<head>
+<link rel="stylesheet" href="login page.css">
+<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">TimeTable 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content"> 
+      <div class="row">
+        <div class="column">
+          <h3>INFORMATION TECHNOLOGY</h3>
+          <a href="#">1st Year</a>
+          <a href="#">2nd Year</a>
+          <a href="#">3rd Year</a>
+        </div>
+        <div class="column">
+          <h3>CSE</h3>
+          <a href="#">1st Year</a>
+          <a href="#">2nd Year</a>
+          <a href="#">3rd Year</a>
+        </div>
+        <div class="column">
+          <h3>EEE</h3>
+          <a href="#">1st Year</a>
+          <a href="#">2nd Year</a>
+          <a href="#">3rd Year</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">Dept 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">It</a>
+      <a href="#">Cse</a>
+      <a href="#">EEE</a>
+    </div>
+  </div> <div class="dropdown">
+    <button class="dropbtn">Contact Us 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Email</a>
+      <a href="#">Phone Number</a>
+      <a href="#">Facebook</a>
+    </div>
+  </div> 
+  <a href="#about">About</a>
+
+  <div class="topnav-right">
+    <a href="signup page.html">Register</a>
+  </div>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<form action="view.html">
+  <div class="imgcontainer">
+    <img src="images/pragati.jpg" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="Name" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" required>
+
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+</body>
+</html>

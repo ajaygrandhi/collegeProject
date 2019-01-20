@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <style type="text/css">
+    #piechart{
+      float:right;
+      width:50%
+    }
+    #donut-single{
+      float: left;
+      width: 30%
+    }
+</style>
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">TimeTable 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content"> 
+      <div class="row">
+        <div class="column">
+          <h3>INFORMATION TECHNOLOGY</h3>
+          <a href="#">1st Year</a>
+          <a href="#">2nd Year</a>
+          <a href="#">3rd Year</a>
+        </div>
+        <div class="column">
+          <h3>CSE</h3>
+          <a href="#">1st Year</a>
+          <a href="#">2nd Year</a>
+          <a href="#">3rd Year</a>
+        </div>
+        <div class="column">
+          <h3>EEE</h3>
+          <a href="#">1st Year</a>
+          <a href="#">2nd Year</a>
+          <a href="#">3rd Year</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">Dept 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">It</a>
+      <a href="#">Cse</a>
+      <a href="#">EEE</a>
+    </div>
+  </div> <div class="dropdown">
+    <button class="dropbtn">Contact Us 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Email</a>
+      <a href="#">Phone Number</a>
+      <a href="#">Facebook</a>
+    </div>
+  </div> 
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<p id="piechart"></p>
+<p id="pie"></p>
+<p id="donut_single" style="width: 500px; height: 500px;"></p>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Effort', 'Amount given'],
+          ['My all', 70],
+        ]);
+
+        var options = {
+          pieHole: 0.5,
+          pieSliceTextStyle: {
+            color: 'black',
+          },
+          legend: 'none'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donut_single'));
+        chart.draw(data, options);
+      }
+</script>
+
+
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Subject Names', 'Cgpa'],
+  ['st', 8],
+  ['dm', 7],
+  ['es', 9],
+  ['wt', 7],
+  ['cn', 8]
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {'title':'My Average Day', 'width':550, 'height':550};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, options);
+}
+</script>
+
+</body>
+</html>
+1111
